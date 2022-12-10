@@ -1,4 +1,4 @@
-package corejava.rating;
+package core.java.rating;
 
 import static org.junit.Assert.assertTrue;
 

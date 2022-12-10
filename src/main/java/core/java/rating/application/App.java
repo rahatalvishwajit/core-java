@@ -1,4 +1,6 @@
-package corejava.rating;
+package core.java.rating.application;
+
+import core.java.rating.model.*;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -260,7 +262,7 @@ public class App
 					flag = true;
 				}
 			}
-			if(flag == false) {
+			if(!flag) {
 				System.out.println("Student data does not exist");
 			}
 		}
@@ -331,7 +333,7 @@ public class App
 				flag = true;
 			}
 		}
-		if(flag == false) {
+		if(!flag) {
 			System.out.println("Subject does not exist.");
 		}
 	}
@@ -352,7 +354,7 @@ public class App
 				flag = true;
 			}
 		}
-		if(flag == false) {
+		if(!flag) {
 			System.out.println("Student does not exist.");
 		}
 	}
@@ -402,10 +404,10 @@ public class App
 
 		for(Assignments key : set) {
 			CompositeKey2 key1 = new CompositeKey2(key.studentName, key.subject);
-			float testscore = 0;
-			float labscore = 0;
-			float quizscore = 0;
-			float projectscore = 0;
+			float testscore;
+			float labscore;
+			float quizscore;
+			float projectscore;
 			if(testScore.containsKey(key1)) {
 				testscore = (float) ((40 * testScore.get(key1).marks) /testScore.get(key1).size) / 100; 
 			}

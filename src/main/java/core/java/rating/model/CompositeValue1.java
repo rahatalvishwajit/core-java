@@ -1,9 +1,9 @@
-package corejava.rating;
+package core.java.rating.model;
 
 public class CompositeValue1 {
 
-	int marks;
-	int size;
+	public int marks;
+	public int size;
 	
 	public CompositeValue1(int marks, int size) {
 

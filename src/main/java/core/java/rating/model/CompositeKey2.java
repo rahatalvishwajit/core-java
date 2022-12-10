@@ -1,9 +1,9 @@
-package corejava.rating;
+package core.java.rating.model;
 
 public class CompositeKey2 {
 
-	String studentName;
-	String subject;
+	public String studentName;
+	public String subject;
 	
 	public CompositeKey2(String studentName, String subject) {
 

@@ -1,10 +1,10 @@
-package corejava.rating;
+package core.java.rating.model;
 
 public class CompositeKey1 {
 
-	String studentName;
-	String subject;
-	String assignmentCategory;
+	public String studentName;
+	public String subject;
+	public String assignmentCategory;
 	
 	public CompositeKey1(String studentName, String subject, String assignmentCategory) {
 
